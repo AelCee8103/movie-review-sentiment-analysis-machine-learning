@@ -10,18 +10,10 @@ This project analyzes the sentiment of movie reviews using machine learning tech
 
 ## Getting Started
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/movie-sentiment-analysis.git
-    cd movie-sentiment-analysis
-    ```
-2. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. Run the analysis:
-    ```bash
-    python main.py
-    ```
+1. Install dependencies:
 
+       pip install -r requirements.txt
 
+2. Run the analysis:
+
+       python app.py
