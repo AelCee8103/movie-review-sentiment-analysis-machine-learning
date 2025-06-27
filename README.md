@@ -12,7 +12,7 @@ This project analyzes the sentiment of movie reviews using machine learning tech
 
 1. Install dependencies:
 
-       pip install -r requirements.txt
+       pip install streamlit nltk scikit-learn
 
 2. Run the analysis:
 

@@ -1,9 +1,13 @@
 import pickle as pk
 import streamlit as st
-from nltk.corpus import stopwords
-import nltk
 
-nltk.download('stopwords')
+
+def get_stopwords():
+    import nltk
+    nltk.download('stopwords', quiet=True)
+    from nltk.corpus import stopwords
+    return stopwords.words('english')
+
 
 # Load models
 lr = pk.load(open('LogisticRegression2.pkl', 'rb'))
@@ -15,6 +19,8 @@ vectorizer = pk.load(open('Scaler.pkl', 'rb'))
 
 
 def clean_review(review):
+    stops = get_stopwords()
+    return ' '.join(word for word in review.split() if word.lower() not in stops)
     return ' '.join(word for word in review.split() if word.lower() not in stopwords.words('english'))
 
 
