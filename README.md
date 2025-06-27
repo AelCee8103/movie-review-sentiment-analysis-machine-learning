@@ -17,3 +17,7 @@ This project analyzes the sentiment of movie reviews using machine learning tech
 2. Run the analysis:
 
        python app.py
+
+3. Run the streamlit:
+
+       streamlit run app.py
