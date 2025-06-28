@@ -10,11 +10,11 @@ def get_stopwords():
 
 
 # Load models
-lr = pk.load(open('LogisticRegression2.pkl', 'rb'))
-sgd = pk.load(open('SGD2.pkl', 'rb'))
-nb = pk.load(open('NaiveBayes2.pkl', 'rb'))
-pa = pk.load(open('PassiveAggressive2.pkl', 'rb'))
-ri = pk.load(open('RidgeRegression2.pkl', 'rb'))
+lr = pk.load(open('LogisticRegression.pkl', 'rb'))
+sgd = pk.load(open('SGD.pkl', 'rb'))
+nb = pk.load(open('NaiveBayes.pkl', 'rb'))
+pa = pk.load(open('PassiveAggressive.pkl', 'rb'))
+ri = pk.load(open('RidgeRegression.pkl', 'rb'))
 vectorizer = pk.load(open('Scaler.pkl', 'rb'))
 
 
